@@ -8,7 +8,7 @@ import './ExpenseItem.css';
 
 
 
-function ExpenseItem (props) {
+const ExpenseItem = (props) => {
 
 
     return (
