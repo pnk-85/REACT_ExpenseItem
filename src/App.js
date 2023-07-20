@@ -1,5 +1,6 @@
 import React from "react";
 import Expenses from "./component/Expenses/Expenses";
+import NewExpense from "./component/NewExpense/NewExpense";
 import './App.css';
 
 
@@ -36,16 +37,16 @@ const App = () => {
     },
   ]
 
-  return React.createElement (
-    'div',{},React.createElement('h2',{},"Lets get started"),
-    React.createElement(Expenses, {items: expenses})
-  );
-  // return (
-  //   <div>
-  //     <h2>Lets get started</h2>
-  //     <Expenses items={expenses}/>
-  //   </div>
+  // return React.createElement (
+  //   'div',{},React.createElement('h2',{},"Lets get started"),
+  //   React.createElement(Expenses, {items: expenses})
   // );
+  return (
+    <div>
+      <NewExpense />
+      <Expenses items={expenses}/>
+    </div>
+  );
   // return (
 
   //   <div className='expense-item'>
