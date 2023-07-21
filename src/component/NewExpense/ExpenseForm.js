@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
 import './ExpenseForm.css';
-import userEvent from '@testing-library/user-event';
-import { eventWrapper } from '@testing-library/user-event/dist/utils';
 
 const ExpenseForm = (props) => {
     const [enteredTitle, setenteredTitle] = useState('')
