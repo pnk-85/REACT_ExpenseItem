@@ -10,18 +10,18 @@ import './ExpenseItem.css';
 
 const ExpenseItem = (props) => {
 
-    const [amount, setAmount] = useState(props.amount);
+    // const [amount, setAmount] = useState(props.amount);
 
-    const submit = () => {
-    setAmount('100$'); 
-    console.log(amount);
-}
+    // const submit = () => {
+    // setAmount('100$'); 
+    // console.log(amount);
+// }
 
     return (
         <Card className='expense-item'>
             <ExpenseDate date ={props.date} />
-            <ExpenseDetails amount={amount}  location={props.location}   title={props.title} />
-            <button onClick={submit}>Change Amount</button>
+            <ExpenseDetails amount={props.amount}  location={props.location}   title={props.title} />
+            {/* <button onClick={submit}>Change Amount</button> */}
         </Card>
         
         
